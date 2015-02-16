@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/sidemenu.css">
+<title>XUGS Infopad</title>
+</head>
+<style type="text/css">
+.toggle-box {
+  display: none;
+}
+.toggle-box + label {
+  cursor: pointer;
+  display: block;
+  line-height: 35px;
+  margin-bottom: 5px;
+  padding:5px;
+  border-radius: 3px;
+  color:#fff;
+  font-size: 14px;
+}
+.toggle-box + label + div {
+  display: none;
+  margin-bottom: 10px;
+}
+.toggle-box:checked + label + div {
+  display: block;
+}
+.toggle-box + label:before {
+  background-color: #eaeaea;
+  border-radius: 50%;
+  color: #333;
+  content: "\25BC";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 5px;
+  text-align: center;
+  width: 26px;
+  box-shadow: 1px #000;
+  margin-top:4px;
+}
+.toggle-box:checked + label:before {
+  content: "\25B2";
+} 
+</style>
+<body>
+	<nav class="nav" id="nav">
+    <div style="text-align:center;background:url(images/background.jpg);background-size:cover;height:150px;">
+      <img class="profile" src="images/profile.jpg">
+    </div>
+		<a href="home.html"><img src="images/home.png">Home</a>
+		<a href="schedule.html" id="active-nav"><img src="images/sched.png">Schedule</a>
+		<a href="handbook.html"><img src="images/handbook.png">Handbook</a>
+		<a href="contact.html"><img src="images/contact.png">Contact</a>
+		<a href="credits.html"><img src="images/credits.png">Credits</a>
+	</nav>
+
+	<div class="mainpage">
+		<header class="main-header">
+			<a href="#nav" class="open-mennu">☰</a>
+			<a href="#" class="close-menu">☰</a>
+			<h1 id="infopad">Schedule</h1>
+		</header>
+		<div class="content">
+      <img style="width:100%;background-image:url(images/load.gif); background-position:center; background-repeat:no-repeat; min-height:50px;" src="https://dl.dropboxusercontent.com/u/186790061/GS%20Infopad/schedule.jpg"/>
+      <div class="card">
+        <div class="card-sub" style="background: linear-gradient(to top, #FFF 30%, #f44336 30%);"><h2>XUGS Schedules</h2>
+          <img class="card-circle" style="border:3px solid #f44336;" src="images/schedule.jpg"></div>
+          <div style="padding:0 1%">
+<input class="toggle-box" id="header" type="checkbox" >
+<label for="header" style="background:#a700ae;">Regular Class</label>
+<div><img src="images/schedreg.jpg" id="sched"></div>
+<input class="toggle-box" id="header1" type="checkbox" >
+<label for="header1" style="background:#2e8def;">Schedule 1</label>
+<div><img src="images/sched1.jpg" id="sched"></div>
+<input class="toggle-box" id="header2" type="checkbox" >
+<label for="header2" style="background:#dc572e;">Schedule 2</label>
+<div><img src="images/sched2.jpg" id="sched"></div>
+<input class="toggle-box" id="header3" type="checkbox" >
+<label for="header3" style="background:#643ebf;">Schedule 3</label>
+<div><img src="images/sched3.jpg" id="sched"></div>
+<input class="toggle-box" id="header4" type="checkbox" >
+<label for="header4" style="background:#00a0b1;">Schedule 4</label>
+<div><img src="images/sched4.jpg" id="sched"></div>
+<input class="toggle-box" id="header5" type="checkbox" >
+<label for="header5" style="background:#00a600;">Schedule 5</label>
+<div><img src="images/sched5.jpg" id="sched"></div>
+<input class="toggle-box" id="header6" type="checkbox">
+<label for="header6" style="background:#0A5BC4;">School Calendar SY 2014-15</label>
+<div><img src="images/schoolcal.jpg" id="sched"></div>
+		</div>
+    </div>
+    </div>
+	</div>
+</body>
+
+</html>

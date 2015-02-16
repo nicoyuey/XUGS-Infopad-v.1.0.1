@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/sidemenu.css">
+<title>XUGS Infopad</title>
+</head>
+<style type="text/css">
+.toggle-box {
+  display: none;
+}
+.toggle-box + label {
+  cursor: pointer;
+  display: block;
+  line-height: 35px;
+  margin-bottom: 5px;
+  padding:5px;
+  border-radius: 3px;
+  color:#fff;
+  font-size: 18px;
+}
+.toggle-box + label + div {
+  display: none;
+  margin-bottom: 10px;
+}
+.toggle-box:checked + label + div {
+  display: block;
+}
+.toggle-box + label:before {
+  background-color: #eaeaea;
+  border-radius: 50%;
+  color: #333;
+  content: "\25BC";
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 5px;
+  text-align: center;
+  width: 26px;
+  box-shadow: 1px #000;
+  margin-top:4px;
+}
+.toggle-box:checked + label:before {
+  content: "\25B2";
+} 
+</style>
+<body>
+	<div class="mainpage">
+		<header class="main-header">
+			<a href="handbook.html#officers" class="open-mennu">&nbsp;&#10094;&nbsp;</a>
+			<h1 id="infopad">Handbook</h1>
+		</header>
+		<div class="content">
+			<div class="card">
+				<div class="card-sub" style="border-radius:3px 3px 0px 0px;background:#00a600;"><h2 style="height:72px;line-height:72px">Classroom Officers</h2></div>
+				<div style="padding:0 4px 4px 4px;">
+<p>The elected class officers of the class assist the teacher in class management and government.</p>
+
+<p>You should extend to them due respect and cooperation. They have the authority granted by the teacher and are to be obeyed courteously and promptly when acting within the authority they have received.</p>
+
+<div style="padding:0 1%">
+<input class="toggle-box" id="header" type="checkbox">
+<label for="header" style="background:#0d47a1;">President</label>
+<div id="officer">
+- is in charge of the class when there is no teacher<br>
+- represents the class in the Pupil Councils<br>
+- helps the teacher in organizing the class for some class activities<br>
+- reminds the other class officers of their duties<br>
+</div>
+<input class="toggle-box" id="header1" type="checkbox" >
+<label for="header1" style="background:#f44336;">Secretary</label>
+<div id="officer">
+- does some writing for the teacher<br>
+- helps the teacher in keeping record of schedule of activities<br>
+</div>
+<input class="toggle-box" id="header2" type="checkbox" >
+<label for="header2" style="background:#ba68c8;">Treasurer</label>
+<div id="officer">
+- helps the teacher collect approved funds<br>
+- keeps a record of payees<br>
+- keeps record of amount collected and amount spent<br>
+- keeps the collected funds in a safe place<br>
+</div>
+<input class="toggle-box" id="header3" type="checkbox" >
+<label for="header3" style="background:#81c784;">Beadle</label>
+<div id="officer">
+- takes down names of pupils who are absent from or late in class<br>
+- keeps daily record of the attendance<br>
+- sees to it that the lights and electric fans are turned off when they are not needed<br>
+</div>
+<input class="toggle-box" id="header4" type="checkbox" >
+<label for="header4" style="background:#f06292;">Marshall</label>
+<div id="officer">
+- helps the teacher maintain order in class<br>
+- keeps a record of infractions of classroom rules<br>
+- helps the teacher report to the Prefect of Students, grave violations of, or repeated violations of classroom rules<br>
+</div>
+</div>
+
+		</div>
+		</div>
+	</div>
+</body>
+</html>

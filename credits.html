@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/sidemenu.css">
+
+  <title>XUGS Infopad</title>
+
+<style>
+@font-face {font-family:schoolbell; src: url('css/schoolbell.ttf') format('truetype');}
+@font-face {font-family:roboto; src: url('css/roboto.ttf') format('truetype');}
+@media only screen and (min-width: 0px) {html {font-size: 0.7em;}}
+@media only screen and (min-width: 320px) {html {font-size: 0.8em;}}
+@media only screen and (min-width: 540px) {html {font-size: 0.9em;}}
+@media only screen and (min-width: 720px) {html {font-size: 1em;}}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: ;
+  overflow-x: hidden;
+  font-family: schoolbell;
+}
+
+h1 {
+   font-size: 170%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+.hover {
+  position: absolute;
+  bottom: 20px;
+  right:20px;
+  width:80px;
+  height:20px;
+}
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+}
+
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  width: 80%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.title p {font-size: 14px;}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("images/crystal.jpg");
+   background-attachment: fixed;  
+}
+
+#slide1:before {
+  background-image: url("images/cervini.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide2 {
+  background-image: url("images/mherry.jpg");
+  background-attachment: fixed;
+}
+
+#slide3:before {
+  background-image: url("images/leaf.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background: #222;
+}
+
+</style>
+</head>
+
+<body>
+
+  <div id="title" class="slide header">
+  <h1>XUGS Infopad Credits</h1>
+  <p style="color:#fff"><img src="images/responsive.png" style="width:40px;vertical-align:middle;margin-right:20px;">Version 1.0.1<br></p>
+</div>
+
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1>What is the XUGS Infopad?</h1>
+    <p>XUGS Infopad is an application built for the benefit of the Xavier University Grade School - Ateneo de Cagayan's pupils, teachers, parents and other community members.</p>
+    <p id="freelicense">XUGS Infopad is an android application. If your school is interested in creating your own application, you can contact the <a href="#slide3">author</a> for help regarding making your own school application.</p>
+    <p>This application started as a project of the TechSurfers Club (Computer Club) SY 2013-2014 of XUGS. Since it was unfinished, the author continued its development and testing. This application is still in <b><em>beta mode</em></b>. Thus this application still needs hardware testing and feedback from users.</p>
+    <p>Is this the latest version?</p>
+    <a href="http://calcunico.blogspot.com/search/label/infopad">
+    <div id="update">Check for Latest Version</div></a>
+  </div>
+</div>
+
+<div id="slide2" class="slide">
+  <div class="title">
+    <h1 id="parallax">Thank you!</h1>
+    <p>We would like to recognize the following people for the help they extended in the creation of this application:</p>
+    <div style="font-family:roboto;">
+<h1 id="parallax">Mr. Kevin Gus T. Torlao</h1><p>for the photos used in this application</p>
+<h1 id="parallax">Mr. Emmanuel G. Gomez</h1><p>principal of Xavier University Grade School</p>
+<h1 id="parallax">Fr. Jonjie Sumpaico</h1><p>principal of Xavier University High School</p>
+<h1 id="parallax">Mrs. Liz G. Abing</h1><p>Academic Department Chair of Mathematics Deparment (Macasandig)</p>
+<h1 id="parallax">Ms. Mary Sieras</h1><p>faculty of Xavier University High School for STEP launching</p>
+<h1 id="parallax">Ms. Mherry Ehvvony M. Bullecer</h1><p>for the help in aesthetics and design</p>
+</div>
+  </div>
+</div>
+
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1>Author</h1>
+    <img src="images/nico.jpg" id="chibi">
+<div style="text-align:center; font-size:1.4rem;">
+  Nico C. Calunia<br><br>
+<a href="http://facebook.com/nico.calunia"><div class="tag1" style="height: 35px; line-height: 35px; background: linear-gradient(#1d82ff,#0A5BC4); margin-bottom: 8px; border:1px solid #0A5BC4"><img src="images/fb.png" style="width:35px; vertical-align:middle; padding-right: 10px;">facebook</div></a>
+<a href="mailto:nicoyuey2@gmail.com?Subject=XUGS%20Infopad%20Feedback" target="_top"><div class="tag1" style="background: linear-gradient(#e53869,#BF1E4B); height: 35px; line-height: 35px; margin-bottom: 8px; border:1px solid #BF1E4B"><img src="images/gmail.png" style="width:35px; vertical-align:middle; padding-right: 10px;">gmail</div> </a>
+<a href="http://j.mp/nicomobile"><div class="tag1" style="margin-bottom: 8px; background:linear-gradient(#d721de,#A700AE); height: 35px; line-height: 35px; border:1px solid #A700AE"><img src="images/blog.png" style="width:35px; vertical-align:middle; padding-right: 10px;">blog</div></a>
+</div>
+</div>
+  </div>
+</div>
+
+<div id="slide4" class="slide header">
+    <h2 style="color:#fff;">Resources</h2><br>
+<p style="color:#fff; font-size:1.5rem">
+  <a href="http://build.phonegap.com">Phonegap Build</a> - creation of the application.<br>
+  <a href="http://stackoverflow.com">Stackoverflow</a> - html, css, javascipt codes.<br>
+  <a href="http://gen8.deviantart.com/art/Chibi-Maker-1-1-346025144">Chibi Maker</a> - Making Chibi ^.^<br>
+  <a href="http://feed.mikle.com/">RSS Feed Widget</a> - RSS Feed<br>
+  <a href="http://www.google.com">Google</a> - for everything else<br><br>
+  Copyright &copy; 2015
+</p></div>
+
+<a href="home.html"><div class="hover" id="update">HOME</div></a>
+</body>
+
+</html>
