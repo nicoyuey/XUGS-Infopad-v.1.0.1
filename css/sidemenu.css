@@ -151,7 +151,7 @@ a:link; a:visited; a:active; {color:#189CD5; font-weight: bold;}
 .card-circle {}
 #schedule { line-height: 44px; border-radius: 3px;margin:auto; color:#fff; width:96%;margin:0 2%; font-family: schoolbell}
 #magis{text-align:center;font-weight:bold;font-size: 26px;font-family: schoolbell;color:#0A5BC4;}
-.profile {margin-top: 10px;border-radius: 50%}
+.profile {margin-top: 10px; border-radius: 50%; border:1px solid #fff;background:#fff;}
 
 #sched {margin: 0 auto;width: 94%; border:1px solid #eaeaea;}
 #subjects-in {border-bottom:1px solid #eaeaea;line-height: 26px; padding: 8px 8px; font-size: 20px;}
